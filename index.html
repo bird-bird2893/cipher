@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ハズレ！</title>
+    <title>遺品</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -69,35 +69,26 @@
                 btnShow.innerText = "閉じる";
             } else {
                 moreInfo.style.display = "none";
-                btnShow.innerText = "もっと詳しく";
+                btnShow.innerText = "暗号表示";
             }
         }
     </script>
 </head>
 <body>
     <header>
-        <h1>ハズレ！</h1>
+        <h1>遺品</h1>
     </header>
-
-    <nav>
-        <a href="#">ホーム</a>
-        <a href="#">プロフィール</a>
-        <a href="#">作品集</a>
-        <a href="#">お問い合わせ</a>
-    </nav>
-
+    
     <section>
-        <h2>ようこそ、プログラミングなどへ！</h2>
-        <p>ここではプログラミングに関する情報を提供しています。</p>
-        <p>是非、お楽しみください！</p>
+        <img src="./road-220058_1280.jpg" alt="読み込み中">
+        <h2>あなたがこのサイトを見ているということは、私はこの世にいないということです。</h2>
+        <h2>今までのお礼として、この暗号をあなたに遺します。</h2>
+        <h2>下へ進んでください。</h2>
         <p id="more-info" style="display: none;">
-            追加の情報が表示されます。ここに詳細な説明やコンテンツを追加してください。
+            
         </p>
-        <span id="btn-show" class="btn-show" onclick="showMoreInfo()">もっと詳しく</span>
+        <span id="btn-show" class="btn-show" onclick="showMoreInfo()">暗号表示</span>
     </section>
 
-    <footer>
-        <p>&copy; 2023 プログラミングなど</p>
-    </footer>
 </body>
 </html>
