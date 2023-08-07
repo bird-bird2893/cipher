@@ -49,33 +49,30 @@
             text-align: center;
         }
 
-        /* 追加したCSSスタイル */
-        h1 {
-            font-size: 36px;
-            margin-bottom: 20px;
+        #more-info {
+            display: none;
         }
 
-        h2 {
-            font-size: 24px;
-            margin-bottom: 15px;
-        }
-
-        p {
-            font-size: 18px;
-            color: #333;
-            line-height: 1.8;
-            margin-bottom: 10px;
-        }
-
-        a {
+        .btn-show {
+            cursor: pointer;
             color: #007bff;
-            text-decoration: none;
-        }
-
-        a:hover {
             text-decoration: underline;
         }
     </style>
+    <script>
+        function showMoreInfo() {
+            var moreInfo = document.getElementById("more-info");
+            var btnShow = document.getElementById("btn-show");
+
+            if (moreInfo.style.display === "none") {
+                moreInfo.style.display = "block";
+                btnShow.innerText = "閉じる";
+            } else {
+                moreInfo.style.display = "none";
+                btnShow.innerText = "もっと詳しく";
+            }
+        }
+    </script>
 </head>
 <body>
     <header>
@@ -93,7 +90,10 @@
         <h2>ようこそ、プログラミングなどへ！</h2>
         <p>ここではプログラミングに関する情報を提供しています。</p>
         <p>是非、お楽しみください！</p>
-        <a href="#">もっと詳しく</a>
+        <p id="more-info" style="display: none;">
+            追加の情報が表示されます。ここに詳細な説明やコンテンツを追加してください。
+        </p>
+        <span id="btn-show" class="btn-show" onclick="showMoreInfo()">もっと詳しく</span>
     </section>
 
     <footer>
